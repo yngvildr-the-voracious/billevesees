@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Helldiver Blocker</title>
+    <style>
+        body {
+
+            background-color: black;
+            font-color: green;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mission: Eradicate Automaton Propaganda</h1>
+    <p>Some content here is approved by the Ministry of Truth.</p>
+    <div class="sc-eFrsUN sc-fzEeWY LhRln LvNpR">
+        This is Automaton propaganda! It must be purged for Managed Democracy!
+    </div>
+    <p>This paragraph is safe, citizen.</p>
+
+    <script>
+        const AI = [".sc-eFrsUN.sc-fzEeWY.LhRln.LvNpR"];
+
+        console.log("FOR SUPER EARTH!"); // Mission Start
+
+        AI.forEach(selector => {
+            try {
+            
+                const tinCans = document.querySelectorAll(selector);
+
+                if (tinCans.length > 0) {
+                    console.log(`Found ${tinCans.length} tin can(s) to scrap with selector: "${selector}"`);
+
+                
+                    tinCans.forEach(element => {
+                        element.style.display = 'none';
+                    });
+                } else {
+                    console.log(`No tin cans found for selector: "${selector}". The area is clear.`);
+                }
+            } catch (error) {
+                console.error(`No tin cans to shoot, Helldiver. Seems the "${selector}" intel was provided by enemies of Democracy`, error);
+            }
+        });
+
+        console.log("We protected our way of life! Long live Managed Democracy!"); // Mission Complete
+    </script>
+</body>
+
+</html>
