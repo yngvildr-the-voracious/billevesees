@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Helldiver Blocker</title>
+    <title>Super Earth Armed Forces Citizenship Test</title>
     <style>
         body {
 
             background-color: black;
-            font-color: green;
+            color: green;
             font-family: monospace;
         }
     </style>
@@ -16,17 +16,36 @@
 
 <body>
     <h1>Mission: Eradicate Automaton Propaganda</h1>
-    <div class="truth">Some content here is approved by the Ministry of Truth.</p>
+    <div class="truth">Some content here is approved by the Ministry of Truth.</div>
     <div class="treason">
         This is Automaton propaganda! It must be purged for Managed Democracy!
     </div>
-    <div class"treason">This paragraph is safe, citizen.</div>
+    <div class="truth">This paragraph is safe, citizen.</div>
+    <div>You too can do your part! Denounced a traitor do Democracy today!</div>
+
+    <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email">
+  <input type="radio" id="traitor" name="citizenship-status" value="traitor">
+  <label for="traitor"> I am a traitor</label><br>
+  <input type="radio" id="citizen" name="citizenship-status" value="citizen" checked>
+  <label for="citizen"> I am a citizen</label><br>
+  <input type="submit">
+
+    </form>
+
 
     <script>
         const AI = [".treason"];
 
         console.log("FOR SUPER EARTH!"); // Mission Start
 
+        document.getElementById('traitor').addEventListener('change', traitorPurge);
+function traitorPurge(){        
         AI.forEach(selector => {
             try {
             
@@ -45,7 +64,7 @@
             } catch (error) {
                 console.error(`No tin cans to shoot, Helldiver. Seems the "${selector}" intel was provided by enemies of Democracy`, error);
             }
-        });
+        });}
 
         console.log("We protected our way of life! Long live Managed Democracy!"); // Mission Complete
     </script>
