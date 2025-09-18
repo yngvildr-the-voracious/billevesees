@@ -103,7 +103,7 @@
       const Fear = Math.floor(Math.random() * 12) + 1;
       const resultElementDD = document.getElementById(`dualityDiceResult`);
 
-      resultElementDD.innerText = `Hope: ${Hope}, Fear: ${Fear}!`;
+      resultElementDD.innerText = `${Hope}+${Fear} (Hope: ${Hope}, Fear: ${Fear}!)`;
       
       if (Fear > Hope) {
   
