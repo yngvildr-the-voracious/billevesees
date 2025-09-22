@@ -42,6 +42,7 @@
 
     <script>
         const AI = [".treason"];
+        let traitorsList = newArray();
 
         console.log("FOR SUPER EARTH!"); // Mission Start
 
@@ -53,7 +54,7 @@ function traitorPurge(){
                 const tinCans = document.querySelectorAll(selector);
 
                 if (tinCans.length > 0) {
-                    console.log(`Found ${tinCans.length} tin can(s) to scrap with selector: "${selector}"`);
+                    console.log(`Found ${tinCans.length} tin can(s) to scrap named`);
 
                 
                     tinCans.forEach(element => {
