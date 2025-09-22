@@ -51,29 +51,35 @@
 
         console.log("FOR SUPER EARTH!"); // Mission Start
 
-        document.getElementById('citizen').addEventListener('change', traitorPurge);
-function traitorPurge(){        
-        async AI.forEach(selector => {
-            try {
+        function newTraitorPurge() {
             
-                const tinCans = document.querySelectorAll(selector);
+            if(document.getElementById('citizen')) = true 
+        ;}
 
-                if (tinCans.length > 0) {
-                    console.log(`Found ${tinCans.length} tin can(s) to scrap named`);
+
+// old traitorPurge()
+// function traitorPurge(){        
+//         AI.forEach(selector => {
+//             try {
+            
+//                 const tinCans = document.querySelectorAll(selector);
+
+//                 if (tinCans.length > 0) {
+//                     console.log(`Found ${tinCans.length} tin can(s) to scrap named`);
 
                 
-                    tinCans.forEach(element => {
-                        element.style.display = 'none';
-                    });
-                } else {
-                    console.log(`No tin cans found for selector: "${selector}". The area is clear.`);
-                }
-            } catch (error) {
-                console.error(`No tin cans to shoot, Helldiver. Seems the "${selector}" intel was provided by enemies of Democracy`, error);
-            }
-        });}
+//                     tinCans.forEach(element => {
+//                         element.style.display = 'none';
+//                     });
+//                 } else {
+//                     console.log(`No tin cans found for selector: "${selector}". The area is clear.`);
+//                 }
+//             } catch (error) {
+//                 console.error(`No tin cans to shoot, Helldiver. Seems the "${selector}" intel was provided by enemies of Democracy`, error);
+//             }
+//         });}
 
-        console.log("We protected our way of life! Long live Managed Democracy!"); // Mission Complete
+//         console.log("We protected our way of life! Long live Managed Democracy!"); // Mission Complete
     </script>
 </body>
 
