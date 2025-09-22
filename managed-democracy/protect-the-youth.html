@@ -53,7 +53,7 @@
 
         document.getElementById('citizen').addEventListener('change', traitorPurge);
 function traitorPurge(){        
-        AI.forEach(selector => {
+        async AI.forEach(selector => {
             try {
             
                 const tinCans = document.querySelectorAll(selector);
