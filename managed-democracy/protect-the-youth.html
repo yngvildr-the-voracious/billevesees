@@ -29,7 +29,7 @@
     <div class="truth">This paragraph is safe, citizen.</div>
     <div>You too can do your part! Denounce a traitor to Democracy today!</div>
 
-    <form>
+<form>
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last name:</label><br>
@@ -41,8 +41,6 @@
   <input type="radio" id="citizen" name="citizenship-status" value="citizen" checked>
   <label for="citizen"> I am a citizen</label><br>
   <input type="submit">
-
-    </form>
 
 
     <script>
@@ -56,30 +54,28 @@
             if(document.getElementById('citizen')) = true 
         ;}
 
-
-// old traitorPurge()
-// function traitorPurge(){        
-//         AI.forEach(selector => {
-//             try {
+function traitorPurge(){
+         AI.forEach(selector) => {
+			             try {
             
-//                 const tinCans = document.querySelectorAll(selector);
+                const tinCans = document.querySelectorAll(selector);
 
-//                 if (tinCans.length > 0) {
-//                     console.log(`Found ${tinCans.length} tin can(s) to scrap named`);
+                if (tinCans.length > 0) {
+                   console.log(`Found ${tinCans.length} tin can(s) to scrap`);
 
                 
-//                     tinCans.forEach(element => {
-//                         element.style.display = 'none';
-//                     });
-//                 } else {
-//                     console.log(`No tin cans found for selector: "${selector}". The area is clear.`);
-//                 }
-//             } catch (error) {
-//                 console.error(`No tin cans to shoot, Helldiver. Seems the "${selector}" intel was provided by enemies of Democracy`, error);
-//             }
-//         });}
+                   tinCans.forEach(element => {
+                       element.style.display = 'none';
+                 });
+              } else {
+                   console.log(`No tin cans found for selector: "${selector}". The area is clear.`);
+               }
+           } catch (error) {
+                console.error(`No tin cans to shoot, Helldiver. Seems the "${selector}" intel was provided by enemies of Democracy`, error);
+            }
+        });}
 
-//         console.log("We protected our way of life! Long live Managed Democracy!"); // Mission Complete
+       console.log("We protected our way of life! Long live Managed Democracy!"); // Mission Complete
     </script>
 </body>
 
