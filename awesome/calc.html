@@ -72,11 +72,10 @@
   color: #000000;}
   
   button:focus, button:active{filter:brightness(120%)}
-        .uInput {
+        #uInput:focus {
   transition: width 0.4s ease-in-out;
 }
-
-.uInput {
+#uInput {
   width: 100%;
 }
     </style>
@@ -86,7 +85,7 @@
 
     <!-- numeric calc -->
     <div class="wrapper">
-        <input type="text" value="" class="uInput"></div>
+        <input type="text" value="" id="uInput"></div>
         <div class="numeric-calc" id="basic-calc1">
             <button class="other-ops"  background: #a6a6a6;
   color: #000000;" id="clear_button" value="C">C</button>
@@ -129,16 +128,19 @@
     const uInput = button.getAttribute("value").addEventListener("onclick") ;
     const number = document.querySelectorAll(".number")
     const operator = document.querySelectorAll(".operator")
+    let calcHistory = Array[""];
+    const manageHistory = shift.newArray();
+
+
+function userCalc{}
+function historyManagement{}
+function clearHistory {}
+
 
 
     array.forEach(element => {
         
     });
-    const calc = 
-    let calcHistory = newArray();
-    const refreshHistory = '';
-    
-function    calcInput(uInput) {``;};
 
 </script>
 
