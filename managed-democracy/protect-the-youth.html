@@ -44,39 +44,34 @@
 
 
     <script>
-        const AI = [".treason"];
-        let traitorsList = newArray();
+console.log("FOR SUPER EARTH!");
 
-        console.log("FOR SUPER EARTH!"); // Mission Start
+const AUTOMATONS = [".treason"]
 
-        function newTraitorPurge() {
-            
-            if(document.getElementById('citizen')) = true 
-        ;}
+AUTOMATONS.forEach(selector => {
+    try {
+        const tinCans = document.querySelectorAll(selector);
 
-function traitorPurge(){
-         AI.forEach(selector) => {
-			             try {
-            
-                const tinCans = document.querySelectorAll(selector);
+        if (tinCans.length > 0)
+        {
+            console.log(`Found ${tinCans.length} tin can(s) to scrap with selector: "${selector}"`);
 
-                if (tinCans.length > 0) {
-                   console.log(`Found ${tinCans.length} tin can(s) to scrap`);
+            tinCans.forEach(element =>
+                            {
+                element.style.display = 'none';
+            });
+        }
+        else
+        {
+            console.log(`No tin cans found for selector: "${selector}". The area is clear.`);
+        }
+    }
 
-                
-                   tinCans.forEach(element => {
-                       element.style.display = 'none';
-                 });
-              } else {
-                   console.log(`No tin cans found for selector: "${selector}". The area is clear.`);
-               }
-           } catch (error) {
-                console.error(`No tin cans to shoot, Helldiver. Seems the "${selector}" intel was provided by enemies of Democracy`, error);
-            }
-        });}
-
-       console.log("We protected our way of life! Long live Managed Democracy!"); // Mission Complete
-    </script>
+    catch (error)
+    {
+        console.error(`No tin cans to shoot, Helldiver. Seems the "${selector}" intel was provided by enemies of Democracy`, error);
+    };});
+;</script>
 </body>
 
 </html>
